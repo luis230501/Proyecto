@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de LCD I2C</title>
+</head>
+<body>
+    <h1>Control de LCD I2C</h1>
+    <label for="text">Texto:</label>
+    <input type="text" id="text" name="text" placeholder="Ingrese el texto"><br>
+    <button onclick="controlarLCD()">Imprimir en LCD</button>
+
+    <script>
+        function controlarLCD() {
+            var text = document.getElementById("text").value;
+            // Aquí deberías implementar la lógica para enviar el texto al LCD I2C
+            alert("Texto enviado al LCD: " + text);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Motor Paso a Paso</title>
+</head>
+<body>
+    <h1>Control de Motor Paso a Paso</h1>
+    <label for="steps">Número de Pasos:</label>
+    <input type="number" id="steps" name="steps" placeholder="Ingrese el número de pasos"><br>
+    <label for="direction">Dirección (1 o 0):</label>
+    <input type="number" id="direction" name="direction" placeholder="Ingrese la dirección"><br>
+    <button onclick="controlarMotor()">Controlar Motor</button>
+
+    <script>
+        function controlarMotor() {
+            var steps = document.getElementById("steps").value;
+            var direction = document.getElementById("direction").value;
+            window.location.href = "/controlar_motor/" + steps + "/" + direction;
+        }
+    </script>
+</body>
+</html>

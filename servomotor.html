@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Servomotor</title>
+</head>
+<body>
+    <h1>Control de Servomotor</h1>
+    <label for="angle">Ángulo:</label>
+    <input type="number" id="angle" name="angle" placeholder="Ingrese el ángulo"><br>
+    <button onclick="controlarServo()">Controlar Servomotor</button>
+
+    <script>
+        function controlarServo() {
+            var angle = document.getElementById("angle").value;
+            window.location.href = "/controlar_servo/" + angle;
+        }
+    </script>
+</body>
+</html>
